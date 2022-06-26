@@ -151,7 +151,7 @@
 
 
 
-/* rules.html */
+/* rule.html */
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -236,7 +236,7 @@
 
 
 
-  /* game.html */
+  /* rock.html */
 
 
   .game-wrapper {
@@ -365,5 +365,4 @@
       display: none;
     }
   }
-  
   
