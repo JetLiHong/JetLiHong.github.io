@@ -151,7 +151,7 @@ function DurTime (e) {
 };
 
 // Event listeners
-playBtn.addEventListener('click', () => {
+playBtn.addEventListener('click', function() {
   const isPlaying = musicContainer.classList.contains('play');
 
   if (isPlaying) {

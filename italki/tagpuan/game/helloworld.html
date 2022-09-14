@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <audio ontimeupdate="test()" id="despacito">
+    <source src="buttonsetc/tagpuan.mp3" type="audio/mp3">
+  </audio>
+
+  <div id="p1" style="display: table;margin: auto;top: 100px;height: 20px;" class="mdl-progress ">
+   
+    <div style="display: table;margin: auto;"> 
+      <button onclick="location.href='menu.html';" style="margin-right: 10px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button-- mdl-shadow--4dp"> <i class="material-icons">home</i> </button>
+      <button  id="rewind" style="margin-right: 10px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button-- mdl-shadow--4dp"> <i class="material-icons">fast_rewind</i> </button> 
+      <button  id="playArrow" style="margin-right: 10px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button-- mdl-shadow--4dp"> <i id="jeje" class="material-icons">play_arrow</i> </button>      
+      <button  id="forward" style="margin-right: 10px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button-- mdl-shadow--4dp"> <i class="material-icons">fast_forward</i> </button> 
+      <button  id="restart" style="margin-right: 10px;" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button-- mdl-shadow--4dp"> <i class="material-icons">loop</i> </button>      </div> 
+    <progress id="barTime" value="0" max="281.626122" class="progress mdl-shadow--4dp"></progress>
+    <div id="placeBarTime" class="mdl-tooltip" for="barTime">
+    
+    </div>
+   
+     
+  <div id="container" style="display: table;margin: auto;padding-top: 50px;">
+     
+    <div  class="demo-card-wide mdl-card mdl-shadow--8dp" style="width: 700px;height: 400px; background-color:rgba(255,255,255,0.7);">
+      <div class="mdl-card__title" style="display: block;">
+        <h2 class="mdl-card__title-text">Despacito</h2> </div>
+      <div class="mdl-card__supporting-text">  </div>
+      
+      <div id="lletraCanso" style="text-align:center;" class="mdl-card__actions mdl-card--border">
+          <span id="fraseNoVisible"  class="stil mdl-textfield mdl-js-textfield mdl-textfield--floating-label" type="text" > 
+    </span>
+        <div id="actualFrase" style="width: 500px;" class="stil mdl-textfield mdl-js-textfield mdl-textfield--floating-label"> 
+          <input disabled id="fraseNoVisible" style="position:absolute;visibility:hidden" class="test1 mdl-textfield__input" type="text" id="sample3"> 
+          <input disabled id="test" style="position:absolute;width: 500px;" class="test1 mdl-textfield__input" type="text" id="sample3"> 
+          <input disabled id="printLetter" style="width: 0px;" value="Test prova 1, 2, 3" class="stil mdl-textfield__input" type="text" id="sample4">          
+          
+          
+            
+          
+
+          
+           
+          
+          
+          </label> 
+
+
+
+          <div class="well">
+            <div id="inputTextToSave" style="overflow: scroll; height: 200px">
+              <div>
+                Di, di ko inakalang<br>
+                Darating din sa akin<br>
+                Nung ako'y nanalangin kay Bathala<br>
+                Naubusan ng bakit<br>
+                <br>
+                Bakit umalis nang walang sabi?<br>
+                Bakit 'di siya lumaban kahit konti?<br>
+                Bakit 'di maitama ang tadhana?<br>
+                <br>
+                At nakita kita sa tagpuan ni Bathala<br>
+                May kinang sa mata na di maintindihan<br>
+                Tumingin kung saan sinubukan kong lumisan<br>
+                At tumigil ang mundo<br>
+                Nung ako'y ituro mo<br>
+                Siya ang panalangin ko<br>
+                <br>
+                At hindi di mapaliwanag<br>
+                Ang nangyari sa akin<br>
+                Saksi ang lahat ng tala<br>
+                Sa iyong panalangin<br>
+                <br>
+                Pano nasagot lahat ng bakit?<br>
+                Di makapaniwala sa nangyari<br>
+                Pano mo naitama ang tadhana?<br>
+                <br>
+                Nung nakita kita sa tagpuan ni Bathala<br>
+                May kinang sa mata na di maintindihan<br>
+                Tumingin kung saan sinubukan kong lumisan<br>
+                At tumigil ang mundo<br>
+                Nung ako'y ituro mo<br>
+                At hindi ka lumayo<br>
+                Nung ako yung sumusuko<br>
+                At nagbago ang mundo<br>
+                Nung ako'y pinaglaban mo<br>
+                At tumigil ang mundo<br>
+                Nung ako'y pinili mo<br>
+                Siya ang panalangin ko
+                </div>
+             
+            
+            </div>
+      
+
+
+
+
+        </div>
+      </div>
+      <div id="timing"class="mdl-card__menu"> </div>
+    </div>
+  </div>
+        
+ <video  id="video" playsinline muted>
+ <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="buttonsetc/tagpuan.mp4" type="video/mp4">
+</video>
+  <script src="motomoto.js"></script>
+</body>
+
+</html>
