@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Tagalog cards</title>
+
+
+      <style>
+    
+
+        /* TAKE OBJECT FAR FROM PERSPECTIVE VIEW */
+        .card {
+          /* background-color: #0000aa; */
+          perspective: 1000px;
+          margin: 1rem;
+  
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+  
+        }
+
+  
+        /* SET SAME COLUMN AND ROW FOR BOTH CARD */
+        .card-container {
+          display: grid;
+          grid-template-columns: 1fr;
+  
+          
+          transition: all 1s ease;
+  
+          transform-style: preserve-3d;
+  
+        }
+        .card-front {
+          grid-area: 1 / 1;
+          transform: rotateY(180deg);
+          backface-visibility: hidden;
+          
+        }
+        .card-back {
+          grid-area: 1 / 1;
+          backface-visibility: hidden;
+          
+        }
+  
+        /* FIX CARD IMAGES WIDTH */
+        .card-container img {
+          width: 15rem;
+        }
+  
+        .card:hover .card-container {
+          transform: rotateY(180deg);
+        }
+        
+      </style>
+   
+    
+
+       
+
+
+</head>
+<body>
+    
+    <div class="slide-container">
+        <span class="slider-span" id="slider-span1"></span>
+        <span class="slider-span" id="slider-span2"></span>
+        <span class="slider-span" id="slider-span3"></span>
+        <span class="slider-span" id="slider-span4"></span>
+        <span class="slider-span" id="slider-span5"></span>
+        <span class="slider-span" id="slider-span6"></span>
+        
+        <div class="image-slider">
+
+            <div class="slide-div" id="slide-1">
+            
+            
+                <div class="card">
+                <div class="card-container">
+                  
+                 
+                    <div class="card-back">
+                        
+                    <img src="buttonsetc/1a.png" alt="" class="img" id="img1"/>
+                   
+                 
+
+                  </div>
+                  <div class="card-front">
+                    
+                    <a href="#slider-span1" class="button" id="button-1">
+                    <img src="buttonsetc/1b.png" alt="" class="img" id="img1"/>
+
+                    </a>
+                    
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+            
+            <div class="slide-div" id="slide-2">
+                
+                <div class="card">
+                    <div class="card-container">
+                      
+                     
+                        <div class="card-back">
+                            
+                        <img src="buttonsetc/2a.png" alt="" class="img" id="img2"/>
+                       
+                     
+    
+                      </div>
+                      <div class="card-front">
+                        
+                        <a href="#slider-span2" class="button" id="button-2">
+                        <img src="buttonsetc/2b.png" alt="" class="img" id="img2"/>
+    
+                        </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="slide-div" id="slide-3">
+                
+                <div class="card">
+                    <div class="card-container">
+                      
+                     
+                        <div class="card-back">
+                            
+                        <img src="buttonsetc/3a.png" alt="" class="img" id="img3"/>
+                       
+                     
+    
+                      </div>
+                      <div class="card-front">
+                        
+                        <a href="#slider-span3" class="button" id="button-1">
+                        <img src="buttonsetc/3b.png" alt="" class="img" id="img3"/>
+    
+                        </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+               
+            </div>
+            <div class="slide-div" id="slide-4">
+                
+                <div class="card">
+                    <div class="card-container">
+                      
+                     
+                        <div class="card-back">
+                            
+                        <img src="buttonsetc/4a.png" alt="" class="img" id="img4"/>
+                       
+                     
+    
+                      </div>
+                      <div class="card-front">
+                        
+                        <a href="#slider-span4" class="button" id="button-4">
+                        <img src="buttonsetc/4b.png" alt="" class="img" id="img4"/>
+    
+                        </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+               
+            </div>
+            <div class="slide-div" id="slide-5">
+                
+                <div class="card">
+                    <div class="card-container">
+                      
+                     
+                        <div class="card-back">
+                            
+                        <img src="buttonsetc/5a.png" alt="" class="img" id="img5"/>
+                       
+                     
+    
+                      </div>
+                      <div class="card-front">
+                        
+                        <a href="#slider-span5" class="button" id="button-5">
+                        <img src="buttonsetc/5b.png" alt="" class="img" id="img5"/>
+    
+                        </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+               
+            </div>
+            <div class="slide-div" id="slide-6">
+                
+                <div class="card">
+                    <div class="card-container">
+                      
+                     
+                        <div class="card-back">
+                            
+                        <img src="buttonsetc/6a.png" alt="" class="img" id="img6"/>
+                       
+                     
+    
+                      </div>
+                      <div class="card-front">
+                        
+                        <a href="#slider-span6" class="button" id="button-6">
+                        <img src="buttonsetc/6b.png" alt="" class="img" id="img6"/>
+    
+                        </a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+
+      
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
