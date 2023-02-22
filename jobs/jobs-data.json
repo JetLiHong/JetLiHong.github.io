@@ -1,0 +1,65 @@
+[
+    {
+      "title": "Software Engineer",
+      "company": "Acme Inc.",
+      "location": "San Francisco, CA",
+      "description": "We are seeking a skilled software engineer to join our team. The ideal candidate will have experience with Java and be proficient in agile development methodologies.",
+      "apply_url": "https://acme.com/careers/software-engineer"
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "XYZ Corp.",
+      "location": "New York, NY",
+      "description": "We are seeking a full stack developer to design and build scalable web applications. The ideal candidate will have experience with React and Node.js.",
+      "apply_url": "https://xyz.com/careers/full-stack-developer"
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "ABC Company",
+      "location": "Seattle, WA",
+      "description": "We are seeking a DevOps engineer to improve our deployment processes and infrastructure. The ideal candidate will have experience with AWS and Terraform.",
+      "apply_url": "https://abc.com/careers/devops-engineer"
+    },
+    {
+      "title": "Data Scientist",
+      "company": "Def Tech",
+      "location": "San Francisco, CA",
+      "description": "We are seeking a data scientist to help us analyze and interpret large datasets. The ideal candidate will have experience with Python and machine learning algorithms.",
+      "apply_url": "https://def.com/careers/data-scientist"
+    },
+    {
+      "title": "Product Manager",
+      "company": "Ghi Inc.",
+      "location": "New York, NY",
+      "description": "We are seeking a product manager to lead the development of our new software product. The ideal candidate will have experience with agile development methodologies and be a strong communicator.",
+      "apply_url": "https://ghi.com/careers/product-manager"
+    },
+    {
+      "title": "Quality Assurance Tester",
+      "company": "Jkl LLC",
+      "location": "Seattle, WA",
+      "description": "We are seeking a quality assurance tester to ensure the quality of our software products. The ideal candidate will have experience with manual and automated testing techniques.",
+      "apply_url": "https://jkl.com/careers/quality-assurance-tester"
+    },
+    {
+      "title": "UX Designer",
+      "company": "Mno Inc.",
+      "location": "San Francisco, CA",
+      "description": "We are seeking a UX designer to design intuitive and engaging user experiences. The ideal candidate will have experience with user research and prototyping tools.",
+      "apply_url": "https://mno.com/careers/ux-designer"
+    },
+    {
+      "title": "Technical Writer",
+      "company": "Pqr Inc.",
+      "location": "New York, NY",
+      "description": "We are seeking a technical writer to create clear and concise documentation for our software products. The ideal candidate will have experience with software documentation and technical writing best practices.",
+      "apply_url": "https://pqr.com/careers/technical-writer"
+    },
+    {
+      "title": "DevOps Engineer",
+      "company": "Stu Inc.",
+      "location": "Seattle, WA",
+      "description": "We are seeking a DevOps engineer to improve our deployment processes and infrastructure. The ideal candidate will have experience with Docker and Kubernetes.",
+      "apply_url": "https://stu.com/careers/devops-engineer"
+    }
+  ]

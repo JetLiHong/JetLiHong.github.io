@@ -1,0 +1,88 @@
+  /* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color and font styles for the entire page */
+  body {
+    background-color: #2C3E50;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 32px;
+  }
+  
+  /* Style the main content */
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    margin: 0 auto; /* this will center the element horizontally */
+    max-width: 800px; /* this will limit the width of the element */
+    text-align: center; /* this will center the child elements (the job listings) */
+  }
+  
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  section li h3 {
+    margin-bottom: 10px;
+  }
+  
+  section li p {
+    margin-bottom: 5px;
+  }
+  
+  section li a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  section li a:hover {
+    background-color: #cc5656;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
