@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicatiescherm</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+
+    
+</head>
+<body>
+    <h1>Applicatiescherm</h1>
+    <form action="/add_application" method="POST">
+
+        <label for="name">Application Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="ipfilter">IP Filter:</label>
+        <input type="text" id="ipfilter" name="ipfilter" required>
+
+        <input type="submit" id="add-button" value="Voeg Applicatie Toe">
+    </form>
+
+
+    <form action="/delete_application" method="POST">
+        <input type="submit" id="delete-button" value="Verwijder Applicatie (Laatst toegevoegd)">
+    </form>
+
+
+
+    <div class="dashboard">
+        <h1>Omgevingen / Bestanden</h1>
+        <div class="applications-block">
+                <ul class="environment-list">
+                    <li><a href="#">Omgeving 1</a></li>
+                    <li><a href="#">Omgeving 2</a></li>
+                    <li><a href="#">Omgeving 3</a></li>
+                    
+                </ul>
+        </div>
+        
+        <div class="logging-block">
+            <h1>Logging</h1>
+            <ul class="log-messages">
+                
+                <div class="log-entry">
+                    <span class="log-timestamp">2023-08-08 10:00:00</span>
+                    <span class="log-level log-info">INFO</span>
+                    <p class="log-text">Applicatie gestart</p>
+                </div>
+                <div class="log-entry">
+                    <span class="log-timestamp">2023-08-08 10:05:00</span>
+                    <span class="log-level log-warning">WAARSCHUWING</span>
+                    <p class="log-text">Verbinding verloren met Database</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <h1>Applicaties</h1>
+    <table class="app-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>IP Filter</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically generated here -->
+            {% for ipfilter in application %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ ipfilter[0] }}</td>
+                <td>{{ ipfilter[1] }}</td>
+            </tr>
+            
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    
+</body>
+</html>

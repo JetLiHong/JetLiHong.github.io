@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, ul, .log-entry{
+    text-align: center;
+}
+
+
+
+.environment-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.environment-list li::before {
+    content: "•"; /* Custom bullet character (dot) */
+    margin-right: 5px; /* Spacing between the bullet and text */
+    color: black; /* Bullet color */
+}
+
+
+
+.app-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.app-table th, .app-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.app-table th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+form {
+    background-color: #BDFCC9; /* Bleekgroene achtergrondkleur */
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#name,
+#ipfilter,
+/* input[type="text"],  */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#add-button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: #45a049;
+}
+
+#delete-button {
+    background-color: #FF0000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
