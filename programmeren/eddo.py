@@ -57,8 +57,8 @@ def bereken_force_en_moment(hoek_A, hoek_Y, massa_giek, massa_last):
     Fb_y = Fb * math.sin(math.radians(hoek_X))
 
     # Berekeningen voor Fax en Fay
-    Fax = -Fb * math.cos(math.radians(hoek_X)) + massa_giek * math.sin(math.radians(hoek_A)) + massa_last * math.sin(math.radians(hoek_A))
-    Fay = Fb * math.sin(math.radians(hoek_X)) - massa_giek * math.cos(math.radians(hoek_A)) - massa_last * math.cos(math.radians(hoek_A))
+    Fax = -Fb_x + massa_giek * math.sin(math.radians(hoek_A)) + massa_last * math.sin(math.radians(hoek_A))
+    Fay = Fb_y * math.sin(math.radians(hoek_X)) - massa_giek * math.cos(math.radians(hoek_A)) - massa_last * math.cos(math.radians(hoek_A))
 
     # Berekeningen voor hoek Z en Fa
     hoek_Z = math.degrees(math.atan(abs(Fay) / abs(Fax)))
